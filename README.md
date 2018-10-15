@@ -1,2 +1,2 @@
 # Robofriends
-small app  to practice
+this is an app created by React
