@@ -1,2 +1,2 @@
-# Robofriends
-this is an app created by React
+# PlanetApps
+This is The Planet Of My Apps
