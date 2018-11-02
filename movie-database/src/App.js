@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import MovieRow from './MovieRow';
 
 
 
@@ -9,24 +10,16 @@ class App extends Component {
     console.log('This is my init')
 
     const movies = [
-      { id: 0, title: 'Awangers', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
-      { id: 1, title: 'Superman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
-      { id: 2, title: 'Batman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
+      { id: 0, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/1ZEJuuDh0Zpi5ELM3Zev0GBhQ3R.jpg', title: 'Awangers', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
+      { id: 1, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/7Gfda4S0FpWf6edfGFm0xJgRJ4b.jpg', title: 'Superman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
+      { id: 2, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/dnLvZJD8Zdw2fHzL4AtM0kZSkt2.jpg', title: 'Batman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
     ]
 
-    this.state = {
-      rows: [
-        <p key="1">This is my row 1</p>,
-        <p key="2">This is my row 2</p>,
-        <p key="3">This is my row 3</p>,
-      ]
-    }
-
     let movieRows = []
-
     movies.forEach((movie) => {
       console.log(movie.title)
-      movieRows.push(<p> movie title: {movie.title}</p>)
+      const movieRow = <MovieRow movie={movie} />
+      movieRows.push(movieRow)
     });
 
     this.state = {rows: movieRows}
