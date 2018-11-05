@@ -9,22 +9,7 @@ class App extends Component {
     super(props)
     this.state = {}
 
-    /* const movies = [
-      { id: 0, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/1ZEJuuDh0Zpi5ELM3Zev0GBhQ3R.jpg', title: 'Awangers', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
-      { id: 1, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/7Gfda4S0FpWf6edfGFm0xJgRJ4b.jpg', title: 'Superman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
-      { id: 2, poster_src: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2/dnLvZJD8Zdw2fHzL4AtM0kZSkt2.jpg', title: 'Batman', overview: 'blalkdsfklfdkfdklfdklkldfslkdf' },
-    ]
-
-    let movieRows = []
-    movies.forEach((movie) => {
-      console.log(movie.title)
-      const movieRow = <MovieRow movie={movie} />
-      movieRows.push(movieRow)
-    });
-
-    this.state = {rows: movieRows} */
-
-    this.performSearch('woman')
+    this.performSearch('')
   }
 
   searchChangeHandler(event) {
