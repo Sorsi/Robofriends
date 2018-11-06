@@ -9,31 +9,69 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{ color: '#000', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png) center / cover' }}>
-            React Project #1
+        <div className="projects-grid">
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#000', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png) center / cover' }}>
+              React Project #1
          </CardTitle>
-          <CardText>
-            blblblblbblblbllskkasdklklasdkjldskljdskljdsffkjldskljdskljdskljdkjldskjldskjldslkjésdfa
-           kdsfjlksdjfopeirjfklndjkhsukdhgkjdfhgueoifhgg
-           dfgjoiefogjoegjoufjgfdjoigdfjoigjoiffiodfoijdfiojfd
+            <CardText>
+              blblblblbblblbllskkasdklklasdkjldskljdskljdsffkjldskljdskljdskljdkjldskjldskjldslkjésdfa
+             kdsfjlksdjfopeirjfklndjkhsukdhgkjdfhgueoifhgg
+             dfgjoiefogjoegjoufjgfdjoigdfjoigjoiffiodfoijdfiojfd
          </CardText>
-          <CardActions border>
-            <button>GitHub</button>
-            <button>CodePen</button>
-            <button>LiveDemo</button>
-          </CardActions>
-          <CardMenu style={{color: '#fff'}}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
+            <CardActions border>
+              <button>GitHub</button>
+              <button>CodePen</button>
+              <button>LiveDemo</button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#000', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png) center / cover' }}>
+              React Project #2
+         </CardTitle>
+            <CardText>
+              blblblblbblblbllskkasdklklasdkjldskljdskljdsffkjldskljdskljdskljdkjldskjldskjldslkjésdfa
+             kdsfjlksdjfopeirjfklndjkhsukdhgkjdfhgueoifhgg
+             dfgjoiefogjoegjoufjgfdjoigdfjoigjoiffiodfoijdfiojfd
+         </CardText>
+            <CardActions border>
+              <button>GitHub</button>
+              <button>CodePen</button>
+              <button>LiveDemo</button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle style={{ color: '#000', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png) center / cover' }}>
+              React Project #3
+         </CardTitle>
+            <CardText>
+              blblblblbblblbllskkasdklklasdkjldskljdskljdsffkjldskljdskljdskljdkjldskjldskjldslkjésdfa
+             kdsfjlksdjfopeirjfklndjkhsukdhgkjdfhgueoifhgg
+             dfgjoiefogjoegjoufjgfdjoigdfjoigjoiffiodfoijdfiojfd
+         </CardText>
+            <CardActions border>
+              <button>GitHub</button>
+              <button>CodePen</button>
+              <button>LiveDemo</button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
       )
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-          <h1>
-            This is MongoDB
-            </h1>
+           <h1>
+             This is mongoDB
+           </h1>
         </div>
       )
     } else if (this.state.activeTab === 2) {
@@ -57,13 +95,11 @@ class Projects extends Component {
           <Tab>MongoDB</Tab>
           <Tab>Angular</Tab>
         </Tabs>
-        <section className="projects-grid">
-          <Grid className="projects-grid">
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </section>
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
     )
   }
