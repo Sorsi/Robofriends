@@ -23,13 +23,13 @@ class Landing extends Component {
                 <a href="https://www.linkedin.com/in/orsolya-suto/" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
-                <a href="https://github.com/Sorsi" target="_blank">
+                <a href="https://github.com/Sorsi" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-github-square" />
                 </a>
-                <a href="https://www.freecodecamp.org/sorsi" target="_blank">
+                <a href="https://www.freecodecamp.org/sorsi" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-free-code-camp" />
                 </a>
-                <a href="https://www.facebook.com/orsi.suto" target="_blank">
+                <a href="https://www.facebook.com/orsi.suto" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-facebook-square" />
                 </a>
               </div>
