@@ -36,3 +36,9 @@
   width: 50%;
   margin: auto;
 }
+
+.banner-text p {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 1em;
+}

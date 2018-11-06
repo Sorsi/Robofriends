@@ -16,6 +16,7 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Junior Sorftware Developer</h1>
               <hr />
+              <p>HTML/CSS | Ant Design | JavaScript | Raact | Redux | MongoDB</p>
             </div>
           </Cell>
         </Grid>
