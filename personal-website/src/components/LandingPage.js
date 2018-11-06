@@ -8,11 +8,13 @@ class Landing extends Component {
       <div style={{ width: '100%', margin: 'auto' }}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
-              className="profile-pic"
-              src="Sorsi2.png"
-              alt="pic"
-            />
+            <div className="profile-pic-container">
+              <img
+                className="profile-pic"
+                src="Sorsi2.png"
+                alt="pic"
+              />
+            </div>
             <div className="banner-text">
               <h1>Junior Sorftware Developer</h1>
               <hr />
@@ -26,6 +28,9 @@ class Landing extends Component {
                 </a>
                 <a href="https://www.freecodecamp.org/sorsi" target="_blank">
                   <i className="fa fa-free-code-camp" />
+                </a>
+                <a href="https://www.facebook.com/orsi.suto" target="_blank">
+                  <i className="fa fa-facebook-square" />
                 </a>
               </div>
             </div>
